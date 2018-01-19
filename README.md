@@ -6,9 +6,24 @@
 
 ## Description
 
-_The purpose of this page is receive an input number and to return a range of numbers between zero and the provided number with modifications._
+_The purpose of this page is to receive an input number and to return a range of numbers between zero and the provided number with modifications._
+
+##Specifications
+
+_Numbers that contain a 0, should be replaced with "Beep!" This applies to all digits.
+  -Example Input: 20
+  -Example Output: "Beep Beep!"
+
+_Numbers that contain a 1, should be replaced with "Boop!" This applies to all the digits.
+  -Example Input: 12
+  -Example Output: "Boop Boop!"
+
+-All numbers divisible by 3 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+  -Example Input: 21
+  -Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
 
 ## Github link
+
 _https://github.com/SiR-Frazier/code-review-week-3
 
 ## Setup/Installation Requirements
@@ -19,7 +34,7 @@ _https://github.com/SiR-Frazier/code-review-week-3
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_Currently, the submit button is not working._
 
 ## Support and contact details
 
