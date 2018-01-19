@@ -4,15 +4,30 @@
 
 //back-end logic
 var userNumber = function(userInput) {
-var numberArray = ['0', '1', '3'];
-}
-  if (userNumber.includes()
+var beep = ['0'];
+var boop = ['1'];
+
+  if (userNumber.includes(0)) {
+    return ("Beep");
+  if (userNumber.includes(1)) {
+    alert("Boop");
+    }
+  if (userNumber / 3) {
+    return true
+  } else {
+    return  false
+  }
+
+  };
 
 
 //fron-end logic
 $(document).ready(function() {
   $("form#compute").submit(function(event) {
       event.preventDefault();
+      var userInput = parseInt$("input#inputNumber").val();
+      if (userNumber(userInput)) {
 
-  })
-})
+      }
+  });
+});

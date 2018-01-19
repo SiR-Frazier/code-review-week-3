@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Beep Boop_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{Brief description of application}, January 19, 2018_
 
 #### By _Bryce Frazier_
 
