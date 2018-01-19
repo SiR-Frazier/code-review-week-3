@@ -3,13 +3,25 @@
 //numbers that are divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
 
 //back-end logic:
+  // var numberArray = ['0', '1', '3'];
+  //var inputNumber = function(userInput) {
+  // for (var index = 0;) index < inputNumber.length; index +=) {
+  //alert('');
+//}
+
 
   var inputNumber = function(userInput) {
-    // var numberArray = ['0', '1']
   var beep = ['0'];
   var boop = ['1'];
   // var noCanDo = ['% 3'];
-    if (userInput )
+    if (userInput.includes('0')) {
+      alert("Beep!");
+    }
+
+    if (userInput.includes('1')) {
+      alert("Boop!")
+    }
+    //is divisible by 3
     if (userInput % 3 === true) {
       alert("I'm sorry, Dave. I'm afraid I can't do that.");
     } else {
