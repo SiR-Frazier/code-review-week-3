@@ -1,3 +1,32 @@
+//back-end logic:
+
+var outputNumber = function randomNumber(userInput) {
+  var number = [];
+  for (var index = 0; index < userInput.length; index ++) {
+    if (userInput % 3 === 0) {
+      alert("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (userInput === 1) {
+      alert("Boop!");
+    } else (userInput === 0) {
+      alert("Beep!")
+    }
+  };
+};
+
+//fron-end logic:
+
+$(document).ready(function() {
+  var userInput = "";
+  $("form#compute").submit(function(event) {
+      event.preventDefault();
+      // userInput = parseInt($("input#inputNumber").val());
+      outputNumber = $("input#inputNumber").val();
+      console.log(userInput);
+    }
+  );
+      // $("#inputNumber").text(beepBoop(userInput))
+  console.log(beepBoop(userInput))
+});
 
 // var includes0 = false;
 // var includes1 = false;
@@ -25,23 +54,3 @@
 //     }
 //   }
 // }
-
-var outputNumber = function (inputNumber) {
-  var inputNumber = [];
-  for (var index = 0; index < inputNumber.length; index++)
-}
-
-
-//fron-end logic
-$(document).ready(function() {
-  var userInput = "";
-  $("form#compute").submit(function(event) {
-      event.preventDefault();
-      // userInput = parseInt($("input#inputNumber").val());
-      userInput = $("input#inputNumber").val();
-      console.log(userInput);
-    }
-  );
-      // $("#inputNumber").text(beepBoop(userInput))
-  console.log(beepBoop(userInput))
-});
