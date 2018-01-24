@@ -1,8 +1,10 @@
 //back-end logic:
 
-var outputNumber = function randomNumber(userInput) {
-  var number = [];
-  for (var index = 0; index < userInput.length; index ++) {
+var output = function beepBoop(userInput) {
+  var userInput = [];
+  number.push(userInput);
+
+  for (var index = 0; index < number.length; index ++) {
     if (userInput % 3 === 0) {
       alert("I'm sorry, Dave. I'm afraid I can't do that.");
     } else if (userInput === 1) {
@@ -19,8 +21,8 @@ $(document).ready(function() {
   var userInput = "";
   $("form#compute").submit(function(event) {
       event.preventDefault();
-      // userInput = parseInt($("input#inputNumber").val());
-      outputNumber = $("input#inputNumber").val();
+      userInput = parseInt($("input#inputNumber").val());
+      output = $("input#inputNumber").val();
       console.log(userInput);
     }
   );
