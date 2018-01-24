@@ -1,41 +1,47 @@
-//numbers with a 0 are replaced with "Beep!"
-//numbers that contain a 1 are replaced with "Boop!"
-//numbers that are divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
 
-//back-end logic:
-  // var numberArray = ['0', '1', '3'];
-  //var inputNumber = function(userInput) {
-  // for (var index = 0;) index < inputNumber.length; index +=) {
-  //alert('');
-//}
+// var includes0 = false;
+// var includes1 = false;
+// var divisibleByThree = false;
+//
+// var arrayLength = 0;
+//
+// function beepBoop(rawInput) {
+//
+//   if (rawInput % 3 === 0){
+//     divisibleByThree = true;
+//     return("I'm sorry, Dave. I'm afraid I can't do that.")
+//   }
+//   else {
+//     // create array to hold individual digits from rawInput
+//     var inputDigits = rawInput.toString().split('');
+//
+//     for (var index = 0; index < inputDigits.length; index ++) {
+//       if (inputDigits[index] === "0"){
+//         includes0 = true;
+//       }
+//       else if (inputDigits[index] === "1"){
+//         includes1 = true;
+//       }
+//     }
+//   }
+// }
 
+var outputNumber = function (inputNumber) {
+  var inputNumber = [];
+  for (var index = 0; index < inputNumber.length; index++)
+}
 
-  var inputNumber = function(userInput) {
-  var beep = ['0'];
-  var boop = ['1'];
-  // var noCanDo = ['% 3'];
-    if (userInput.includes('0')) {
-      alert("Beep!");
-    }
-
-    if (userInput.includes('1')) {
-      alert("Boop!")
-    }
-    //is divisible by 3
-    if (userInput % 3 === true) {
-      alert("I'm sorry, Dave. I'm afraid I can't do that.");
-    } else {
-    }
-  }
 
 //fron-end logic
 $(document).ready(function() {
+  var userInput = "";
   $("form#compute").submit(function(event) {
       event.preventDefault();
-      var userInput = parseInt$("input#inputNumber").val();
-      if (inputNumber(userInput)) {
-
-      }
-      $("#inputNumber").text()
-  });
+      // userInput = parseInt($("input#inputNumber").val());
+      userInput = $("input#inputNumber").val();
+      console.log(userInput);
+    }
+  );
+      // $("#inputNumber").text(beepBoop(userInput))
+  console.log(beepBoop(userInput))
 });
