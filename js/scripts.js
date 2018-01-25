@@ -1,19 +1,22 @@
 //back-end logic:
 
-var output = function beepBoop(userInput) {
-  var userInput = [];
-  number.push(userInput);
-
-  for (var index = 0; index < number.length; index ++) {
-    if (userInput % 3 === 0) {
-      alert("I'm sorry, Dave. I'm afraid I can't do that.");
-    } else if (userInput === 1) {
-      alert("Boop!");
-    } else (userInput === 0) {
-      alert("Beep!")
+//var output =
+  function beepBoop(userInput) {
+  var inputArray = [];
+  for (var i = 0; i <= userInput; i ++) {
+    if (i % 3 === 0) {
+      inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (i === 1) {
+      inputArray.push("Boop!");
+    } else if (i === 0) {
+      inputArray.push("Beep!")
+    } else {
+      return inputArray;
     }
-  };
-};
+    // if (/[0]/).test(index);
+    // else if (/[1]/).test(index);
+  }
+}
 
 //fron-end logic:
 
@@ -23,11 +26,9 @@ $(document).ready(function() {
       event.preventDefault();
       userInput = parseInt($("input#inputNumber").val());
       output = $("input#inputNumber").val();
-      console.log(userInput);
     }
   );
       // $("#inputNumber").text(beepBoop(userInput))
-  console.log(beepBoop(userInput))
 });
 
 // var includes0 = false;
