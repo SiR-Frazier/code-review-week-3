@@ -14,7 +14,7 @@ _Numbers that contain a 0, should be replaced with "Beep!" This applies to all d
   -Example Input: 20
   -Example Output: "Beep Beep!"
 
-_Numbers that contain a 1, should be replaced with "Boop!" This applies to all the digits.
+_Numbers that contain a 1, are replaced with "Boop!" This applies to all the digits.
   -Example Input: 12
   -Example Output: "Boop Boop!"
 
@@ -34,11 +34,11 @@ _https://github.com/SiR-Frazier/code-review-week-3
 
 ## Known Bugs
 
-_Currently, the submit button is not working._
+_N/A_
 
 ## Support and contact details
 
-_If you have questions or alternative solutions, please feel free to contact me directly via Github._
+_If you have questions or alternative solutions, please feel free to contact me directly at bx.frazier@gmail.com
 
 ## Technologies Used
 
