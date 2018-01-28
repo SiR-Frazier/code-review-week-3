@@ -1,16 +1,16 @@
 //back-end logic:
 function beepBoop(userInput) {
   var inputArray = [];
-  for (var i = 0; i <= userInput; i ++) {
+  for (var i = 1; i <= userInput; i ++) {
     if (i % 3 === 0) {
     inputArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
-    } else if (i === 1) {
-      inputArray.push("Boop!");
-    } else if (i === 0) {
-      inputArray.push("Beep!");
-    } else {
-      inputArray.push(i);
-    }
+  } else if (i.toString().includes(0)) {
+  	inputArray.push("Beep");
+  } else if (i.toString().includes(1)) {
+  	inputArray.push("Boop");
+  } else {
+  	inputArray.push(i);
+  }
   }
   return inputArray;
 }
@@ -24,6 +24,5 @@ $(document).ready(function() {
     var result = beepBoop(userInput);
     var output = beepBoop();
     $("#result").text(beepBoop(userInput));
-    // $("#output").text(result);
   });
 });
